@@ -1,0 +1,25 @@
+{
+  "name": "second_vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "flow-remove-types vite",
+    "build": "flow-remove-types src/ -d lib/",
+    "preview": "vite preview",
+    "flow": "flow"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-flow": "^7.23.3",
+    "@bunchtogether/vite-plugin-flow": "^1.0.2",
+    "flow-bin": "^0.229.0",
+    "flow-remove-types": "^2.229.0",
+    "sass": "^1.71.1",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "esbuild-plugin-flow": "github:dalcib/esbuild-plugin-flow"
+  }
+}
